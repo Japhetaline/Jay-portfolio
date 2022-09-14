@@ -1,0 +1,106 @@
+.services {
+    padding: 40px;
+    background-color:   rgba(255, 255, 255, 0.753);
+}
+.services .content{
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+  }
+
+  .icon {
+    font-size: 30px;
+    color: #4070f4;
+    margin-bottom: 5px;
+  }
+  
+  .services p{
+    color: #0E2431;
+    font-size: 23px;
+  }
+
+  .services .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .services .title span{
+    color: #0E2431;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  .services .title span::before,
+  .services .title span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #4070f4;
+    left: 0;
+    bottom: 0;
+  }
+  .services .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .services  .topic{
+    color: #4070f4;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .services .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+  }
+  .services .boxes .box:hover{
+    background: #4070f4;
+    color: #fff;
+  }
+  
+  .services .boxes .box:hover .topic,
+  .services .boxes .box:hover p{
+    color: #0E2431;
+    transition: all 0.4s ease;
+  }
+  .services .boxes .box:hover .topic,
+  .services .boxes .box:hover p{
+    color: #fff;
+  }
+  @media (max-width: 1190px) {
+    .services .content{
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .services .boxes .box{
+      margin: 20px 0;
+      width: calc(100% / 2 - 20px);
+    }
+  }
+
+  @media (max-width: 750px) {
+    .services .boxes .box{
+      margin: 20px 0;
+      width: 100%;
+    }
+  }
